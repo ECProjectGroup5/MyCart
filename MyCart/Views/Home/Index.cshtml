@@ -1,8 +1,63 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "My Cart";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="cart-container">
+    <div class="header">
+        <button class="back-btn">←</button>
+        <h1>My Cart</h1>
+        <div class="cart-icon">
+            <span class="cart-count">3</span>
+        </div>
+    </div>
+
+    <div class="cart-items">
+        <div class="cart-item">
+            <img src="path/to/image.jpg" alt="Product Image">
+            <div class="item-details">
+                <h2>Roller Rabbit</h2>
+                <p>Vado Odelle Dress</p>
+                <p class="price">$198.00</p>
+            </div>
+            <div class="quantity-control">
+                <button class="quantity-btn">-</button>
+                <span>1</span>
+                <button class="quantity-btn">+</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="path/to/image.jpg" alt="Product Image">
+            <div class="item-details">
+                <h2>Axel Arigato</h2>
+                <p>Clean 90 Triple Sneakers</p>
+                <p class="price">$245.00</p>
+            </div>
+            <div class="quantity-control">
+                <button class="quantity-btn">-</button>
+                <span>1</span>
+                <button class="quantity-btn">+</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="path/to/image.jpg" alt="Product Image">
+            <div class="item-details">
+                <h2>Herschel Supply Co.</h2>
+                <p>Daypack Backpack</p>
+                <p class="price">$40.00</p>
+            </div>
+            <div class="quantity-control">
+                <button class="quantity-btn">-</button>
+                <span>1</span>
+                <button class="quantity-btn">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        <p>Total (3 items):</p>
+        <p class="total-price">$500.00</p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
 </div>
